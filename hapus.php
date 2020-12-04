@@ -7,7 +7,7 @@ if (isset($_GET['id'])) { //kenapa ga id jadi hapus?
     $id = $_GET['id'];
 
     //buat query hapus
-    $sql = "DELET FROM calon_siswa WHERE id=$id";
+    $sql = "DELETE FROM calon_siswa WHERE id=$id";
     $query = mysqli_query($db, $sql);
 
     //apakah query hapus berhasil?
